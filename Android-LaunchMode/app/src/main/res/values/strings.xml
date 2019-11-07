@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Activity-Launch-Mode</string>
+
+    <string name="back_text">Back</string>
+    <string name="close_text">close</string>
+    <string name="forward">Forward</string>
+
+    <string name="second_activity">Second Activity</string>
+    <string name="third_activity">Third Activity</string>
+    <string name="to_start">To Start</string>
+</resources>

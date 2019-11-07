@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#8bc34a"
+    tools:context=".taskAffinity.TaskAffinityTestSecondActivity">
+
+    <TextView
+        android:id="@+id/activity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Affinity Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/second_affinity_finish_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Activity"
+        app:layout_constraintBottom_toTopOf="@id/second_affinity_finish_affinity"
+        app:layout_constraintEnd_toStartOf="@id/second_to_third_affinity_activity_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_text" />
+
+    <Button
+        android:id="@+id/second_affinity_finish_affinity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Affinity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/second_affinity_finish_activity"
+        app:layout_constraintStart_toStartOf="@+id/second_affinity_finish_activity"
+        app:layout_constraintTop_toBottomOf="@+id/second_affinity_finish_activity" />
+
+    <Button
+        android:id="@+id/second_to_third_affinity_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Third Affinity"
+        app:layout_constraintBottom_toTopOf="@id/second_to_first_no_affinity_activity_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/second_affinity_finish_activity"
+        app:layout_constraintTop_toBottomOf="@id/activity_text" />
+
+    <Button
+        android:id="@+id/second_to_first_no_affinity_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To First No Affinity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/second_to_third_affinity_activity_button"
+        app:layout_constraintStart_toStartOf="@id/second_to_third_affinity_activity_button"
+        app:layout_constraintTop_toBottomOf="@id/second_to_third_affinity_activity_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
