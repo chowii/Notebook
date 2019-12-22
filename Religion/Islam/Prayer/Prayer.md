@@ -11,7 +11,7 @@
 ---
 
 | Legend | 
-| - | - |
+| - |
 | <span style="color:#4caf50"> Read silently </span> |
 | <span style="color:#1e88e5"> Read out loud</span> | 
 | <span style="color:#bb00aa"> Mandatory </span> | 
